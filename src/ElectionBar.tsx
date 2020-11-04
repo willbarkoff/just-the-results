@@ -53,7 +53,7 @@ const ElectionBar: React.FC<ElectionBarProps> = (props) => {
 				>
 					<Tooltip cursor={false} />
 					<XAxis dataKey="name" />
-					<YAxis domain={[0, "datamax"]} orientation="right" tickFormatter={(value) => `${Math.round(value / 1000)}K`} />
+					<YAxis domain={[0, "datamax"]} orientation="right" tickFormatter={(value) => `${Math.round(value / 1000000)}M`} />
 					<Bar dataKey="republican" stackId="a" fill="#db1035" />
 					<Bar dataKey="democratic" stackId="a" fill="#2895d6" />
 				</BarChart>
