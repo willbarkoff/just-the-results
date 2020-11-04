@@ -24,7 +24,7 @@ class App extends React.Component<{}, AppState> {
 
 	async onmessage(event) {
 		let data = JSON.parse(event.data)
-		if (data.pl) {
+		if (data.pl && data.pl.contains("espncdn.com")) {
 			let response = await fetch(data.pl);
 			if (!response.ok || response.statusText != "OK") {
 				alert("an error occured :(")
