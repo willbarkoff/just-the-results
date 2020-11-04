@@ -7,7 +7,6 @@ interface ElectionBarProps {
 }
 
 const ElectionBar: React.FC<ElectionBarProps> = (props) => {
-	console.log(props.results.democrats)
 	let ecData = [
 		{
 			name: 'Electorial College',
@@ -24,9 +23,6 @@ const ElectionBar: React.FC<ElectionBarProps> = (props) => {
 			democratic: props.results.democrats.votes.value,
 		}
 	]
-
-	console.log(popData)
-
 
 	return <div>
 		<div className="columns">

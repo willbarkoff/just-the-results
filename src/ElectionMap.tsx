@@ -9,8 +9,6 @@ interface ElectionMapProps {
 }
 
 const ElectionMap: React.FC<ElectionMapProps> = (props) => {
-	console.log(props.states)
-
 	let states: any = {};
 
 	props.states.forEach((state) => {
