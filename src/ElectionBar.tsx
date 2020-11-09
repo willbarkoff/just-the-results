@@ -9,7 +9,7 @@ interface ElectionBarProps {
 const ElectionBar: React.FC<ElectionBarProps> = (props) => {
 	let ecData = [
 		{
-			name: 'Electorial College',
+			name: 'Electoral College',
 			republican: props.results.republicans.total.value,
 			democratic: props.results.democrats.total.value,
 			other: props.results.other.total.value,
